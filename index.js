@@ -1,12 +1,4 @@
-const readline = require('readline');
 const fs = require('fs');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-const askQuestion = (query) => new Promise(resolve => rl.question(query, resolve));
 
 const createSvg = (text, textColor, shape, shapeColor) => {
   const shapes = {
@@ -21,17 +13,8 @@ const createSvg = (text, textColor, shape, shapeColor) => {
   </svg>`;
 };
 
-const main = async () => {
-  const text = await askQuestion('Enter up to three characters for the logo: ');
-  const textColor = await askQuestion('Enter the text color (keyword or hex): ');
-  const shape = await askQuestion('Choose a shape (circle, triangle, square): ');
-  const shapeColor = await askQuestion('Enter the shape color (keyword or hex): ');
-  
-  const svgContent = createSvg(text, textColor, shape, shapeColor);
-  fs.writeFileSync('logo.svg', svgContent);
-  
-  console.log('Generated logo.svg');
-  rl.close();
+const saveSvg = (filename, content) => {
+  fs.writeFileSync(filename, content);
 };
 
-main();
+module.exports = { createSvg, saveSvg };
