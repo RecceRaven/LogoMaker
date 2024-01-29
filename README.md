@@ -27,7 +27,8 @@ Install the SVG Logo Maker with npm
 Then follow the prompts in the CLI to create your logo. The saved Logo will be located in the root directory.
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![LogoScreen](https://github.com/RecceRaven/LogoMaker/assets/149850541/f70cc8f0-95b7-42e0-9f3e-14fb657bc2e7)
+
 
 
 ## Additional Resources
