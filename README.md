@@ -36,4 +36,4 @@ Then follow the prompts in the CLI to create your logo. The saved Logo will be l
 
 
 [Link to Repo](https://github.com/RecceRaven/LogoMaker)
-
+[Link to Video](https://youtu.be/0dqdRSvDWKw?si=P1EMT3ts96MRS8p1)
